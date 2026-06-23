@@ -15,22 +15,25 @@ ShoRa is just short range pcb where you turn on led using RF signals in the **AI
 
 ## BOM
 
-| Nr | Ref                                     | Value             | Footprint                                                | Qty |
-| -: | --------------------------------------- | ----------------- | -------------------------------------------------------- | --: |
-|  1 | C1                                      | 100nF             | C_0603_1608Metric                                        |   1 |
-|  2 | C2                                      | 2200uF            | CP_Radial_D16.0mm_P7.50mm                                |   1 |
-|  3 | C3                                      | 0.33uF            | C_0603_1608Metric                                        |   1 |
-|  4 | C4                                      | 10uF              | CP_Radial_D5.0mm_P2.00mm                                 |   1 |
-|  5 | R1, R4, R5                              | 100K              | R_2010_5025Metric                                        |   3 |
-|  6 | R2, R3                                  | 51k               | R_2010_5025Metric                                        |   2 |
-|  7 | R6, R7                                  | 470               | R_2010_5025Metric                                        |   2 |
-|  8 | R8                                      | 1                 | R_2010_5025Metric                                        |   1 |
-|  9 | D1                                      | GBU4M             | Diode_Bridge_Vishay_GBU                                  |   1 |
-| 10 | U1                                      | TL494             | DIP-16_W7.62mm                                           |   1 |
-| 11 | U2                                      | LM7824_TO220      | TO-220-3_Vertical                                        |   1 |
-| 12 | Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10 | IRF3205           | TO-220-3_Vertical                                        |  10 |
-| 13 | Q11                                     | TIP2955           | TO-218-3_Vertical                                        |   1 |
-| 14 | T1                                      | 12-230            | Transformer_CHK_EI30-2VA_2xSec                           |   1 |
-| 15 | T2                                      | Transformer_1P_1S | Transformer_37x44                                        |   1 |
-| 16 | J1                                      | 12VDC             | TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal |   1 |
-| 17 | J2                                      | 24V               | TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal |   1 |
+
+
+|   Lp. | References              | Value                         | Footprint                               |   Quantity |
+|------:|:------------------------|:------------------------------|:----------------------------------------|-----------:|
+|     1 | C3, C4, C6, C8, C9, C10 | 100nF                         | C_0603_1608Metric                       |          6 |
+|     2 | C5, C7, C11             | 1uF                           | C_0603_1608Metric                       |          3 |
+|     3 | C1, C2                  | 10uF                          | C_0603_1608Metric                       |          2 |
+|     4 | R4, R5, R10, R11        | 470                           | R_0603_1608Metric                       |          4 |
+|     5 | R1, R2                  | 5.1k                          | R_0603_1608Metric                       |          2 |
+|     6 | R3, R9                  | 100k                          | R_0603_1608Metric                       |          2 |
+|     7 | R6, R8                  | 10k                           | R_0603_1608Metric                       |          2 |
+|     8 | R7                      | 560                           | R_0603_1608Metric                       |          1 |
+|     9 | L1, L2                  | L_Ferrite                     | L_0603_1608Metric                       |          2 |
+|    10 | D1                      | BLUE                          | LED_2512_6332Metric                     |          1 |
+|    11 | U1, U5                  | STM32L051K8Tx                 | LQFP-32_7x7mm_P0.8mm                    |          2 |
+|    12 | U2, U4                  | RFM69HCW                      | HOPERF_RFM9XW_THT                       |          2 |
+|    13 | U3                      | AMS1117-3.3                   | SOT-223-3_TabPin2                       |          1 |
+|    14 | SW1                     | SW_Push                       | SW_PUSH_6mm_H4.3mm                      |          1 |
+|    15 | AE1, AE2                | Antenna                       | TestPoint_THTPad_D2.0mm_Drill1.0mm      |          2 |
+|    16 | J1, J5                  | Conn_ARM_JTAG_SWD_10          | PinHeader_2x05_P1.27mm_Vertical         |          2 |
+|    17 | J3, J4                  | USART                         | PinHeader_1x03_P2.54mm_Vertical         |          2 |
+|    18 | J2                      | USB_C_Receptacle_PowerOnly_6P | USB_C_Receptacle_Amphenol_12401610E4-2A |          1 |
